@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -67,11 +68,11 @@ h4 {
 }
 
 .pic {
-    flex: 2;
+    flex: 1;
 }
 
 .about {
-    flex: 4;
+    flex: 1;
     padding: 10vh 5vw;
 }
 
@@ -95,8 +96,19 @@ h4 {
     list-style-type: none;
 }
 
-
-
 @media screen and (max-width: 800px){
     .pic {flex: none;}
+}
+
+#edu {
+    padding: 10vh 5vw;
+}
+
+.edu {
+    display: flex;
+    flex-direction: column;
+}
+
+.clg {
+    padding: 3.5vh 0;
 }
