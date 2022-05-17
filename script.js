@@ -1,8 +1,8 @@
 function responsiveNavbar() {
-    var x = document.getElementById("topnav");
-    if (x.className === "") {
-      x.className = "responsive";
-    } else {
-      x.className = "";
-    }
+  var x = document.getElementById("topnav");
+  if (x.className === "") {
+    x.className = "responsive";
+  } else {
+    x.className = "";
   }
+}

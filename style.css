@@ -5,6 +5,8 @@
 
 /* Navbar Section */
 
+body { background-color: #fcf2e8; }
+
 nav {
     background-color: white;
     overflow: hidden;
@@ -157,6 +159,7 @@ h4 { color: rgb(30, 50, 180); }
     transition: 0.3s;
     border-radius: 10px;
     overflow: hidden;
+    background-color: white;
 }
 
 .project > img {
@@ -177,4 +180,124 @@ h4 { color: rgb(30, 50, 180); }
     padding: 2px 16px;
 }
 
+/* Contact Section */
+
+#contact { 
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contact { display: flex; }
+
+.contact-form {
+    flex: 50%;
+    padding: 5%;
+}
+
+iframe { width: 100%; }
+
+.map {
+    flex: 50%;
+    padding: 5%;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.message { height: 30vh; }
+
+input[type=submit]{
+    background: linear-gradient(to right, orange, yellow);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+}
+
+input[type=submit]:hover {
+    opacity: 0.7;
+    color: white;
+}
+
 /* Footer Section */
+
+footer{
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+.sub-about {
+    flex: 1;
+}
+
+.links {
+    flex: 1;
+}
+
+.services {
+    flex: 1;
+}
+
+.questions{
+    flex: 1;
+}
+
+.copy{
+    flex: 50%;
+    border-right: solid white 1px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5vh;
+}
+
+.social{
+    flex: 50%;
+    border-left: solid white 1px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+    
+.fa{
+    padding: 17px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;   
+}
+
+.fa-instagram{
+    background: linear-gradient(rgb(255, 123, 0), navy);
+    color: white;   
+}
+
+.fa-tiktok{
+    background: black;
+    color: white;   
+}
