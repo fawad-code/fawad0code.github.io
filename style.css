@@ -23,9 +23,7 @@ nav a:hover {
     color: black;
 }
 
-nav .icon {
-    display: none;
-}
+nav .icon { display: none; }
 
 @media screen and (max-width: 600px) {
     nav a:not(:first-child) {display: none;}
@@ -55,21 +53,15 @@ header {
     text-align: center;
 }
 
-h4 {
-    color: rgb(30, 50, 180);    
-}
+h4 { color: rgb(30, 50, 180); }
 
 .field {
     color: rgb(30, 50, 180);    
 }
 
-#about {
-    display: flex;
-}
+#about { display: flex; }
 
-.pic {
-    flex: 1;
-}
+.pic { flex: 1; }
 
 .about {
     flex: 1;
@@ -92,9 +84,7 @@ h4 {
     padding-left: 8px;
 }
 
-.data {
-    list-style-type: none;
-}
+.data { list-style-type: none; }
 
 @media screen and (max-width: 800px){
     .pic {flex: none;}
@@ -109,6 +99,38 @@ h4 {
     flex-direction: column;
 }
 
-.clg {
-    padding: 3.5vh 0;
+.clg { padding: 3.5vh 0; }
+
+#skills {
+    padding: 10vh 5vw;
 }
+
+.progress { margin: 3vh 0; }
+
+.skill-text {
+    display: inline-block;
+    width: 100%;
+}
+
+.s-name { float: left; }
+.per { float: right; }
+
+.skill {
+    background-color: rgb(192, 192, 192);
+    height: 10px;
+    text-align: right;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill > div {
+    background-color: rgb(50, 70, 180);
+    height: 100%;
+}
+
+.html { width: 90%; }
+.css { width: 75%; }
+.seo { width: 85%; }
+.js { width: 80%; }
+.sql { width: 60%; }
+.php { width: 70%; }
