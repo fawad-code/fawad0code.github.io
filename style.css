@@ -69,7 +69,17 @@ h4 { color: rgb(30, 50, 180); }
 
 #about { display: flex; }
 
-.pic { flex: 1; }
+.pic { 
+    flex: 1;
+    padding: 3% 8%;
+}
+
+.pic > img {
+    height: 100%;
+    width: 100%;
+    border: 10px white solid;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+}
 
 .about {
     flex: 1;
@@ -284,6 +294,12 @@ footer{
 .fa-twitter{
     background: rgb(31, 170, 216);
     color: white;   
+}
+
+.col > ul {
+    padding: 5vh 0;
+    list-style-type: none;
+    padding-left: 0; 
 }
 
 .col > p > i { padding-right: 5%; }
