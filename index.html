@@ -13,25 +13,29 @@
     <title>Fawad Ibrar</title>
 </head>
 <body>
+    <header id="main">
+    
     <!-- Navigation bar -->
-    <nav id="topnav">
-        <a href="#top">Logo</a>
-        <a href="#about">About</a>
-        <a href="#edu">Resume</a>
-        <a href="#projects">Projects</a>
+    <nav>
+        <img src="logoo.jpg" alt="Logo">
         <a href="#contact">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#edu">Resume</a>
+        <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>
 
     <!-- Main section -->
-    <header>
+    <header id="title">
         <h4>HEY! I AM</h4>
         <h1>Fawad Ibrar</h1>
         <h1>I'm a <span class="field">Web Designer</span></h1>
     </header>
     
+    </header>
+
     <!-- About section -->
     <section id="about">
         <div class="pic">
@@ -169,7 +173,7 @@
               <label for="Email">Email</label>
               <input type="text" name="Email" required>
               <label for="Message">Message</label>
-              <input class="message" type="text" name="Message" required>
+              <textarea class="message" name="Message" rows="10" cols="30" required></textarea>
               <br><br><input type="submit" value="Send">
            </form>
            <div class="map">
@@ -185,9 +189,8 @@
 
     <footer>
         <div class="col">
-            <h2>About</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and 
-                Consonantia, there live the blind texts.</p>
+            <h3>About</h3>
+            <p>Find me on social media so we can talk more:</p>
             <div class="social">
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                 <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
@@ -196,7 +199,7 @@
         </div>
 
         <div class="col">
-            <h2>Links</h2>
+            <h3>Links</h3>
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -206,7 +209,7 @@
         </div>
 
         <div class="col">
-            <h2>Services</h2>
+            <h3>Services</h3>
             <ul>
                 <li>Web Design</li>
                 <li>Web Development</li>
@@ -216,7 +219,7 @@
         </div>
 
         <div class="col">
-            <h2>Have a Question?</h2>
+            <h3>Have a Question?</h3>
             <p><i class="fa fa-map-marker"></i>Faqirabad, Peshawar</p>
             <p><i class="fa fa-phone"></i>0316 97223838</p>
             <p><i class="fa fa-envelope"></i>fawad_khan@gmail.com</p>
@@ -224,8 +227,8 @@
 
     </footer>
 
-    <footer>
-        <div class="copy"><i class="fa fa-copyright"></i> 2022 Fawad Ibrar</div>
+    <footer class="copy">
+        <p><i class="fa fa-copyright"></i> 2022 Fawad Ibrar</p>
      </footer>
 </body>
 </html>

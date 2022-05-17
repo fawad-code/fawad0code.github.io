@@ -1,6 +1,11 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    height: 100vh;
 }
 
 /* Navbar Section */
@@ -13,13 +18,20 @@ nav {
 }
 
 nav a {
-    float: left;
+    float: right;
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+nav > img { 
+    float: left;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
 }
 
 nav a:hover {
@@ -53,7 +65,7 @@ nav .icon { display: none; }
 
 /* Head Section */
 
-header {
+#title {
     background-color: aqua;
     padding: 40vh 0 40vh 0;
     text-align: center;
@@ -71,11 +83,14 @@ h4 { color: rgb(30, 50, 180); }
 
 .pic { 
     flex: 1;
-    padding: 3% 8%;
+    padding: 2% 8%;
+    max-width: 50%;
+    justify-content: center;
 }
 
 .pic > img {
-    height: 100%;
+    margin-top: 8%;
+    vertical-align: top;
     width: 100%;
     border: 10px white solid;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
@@ -213,7 +228,7 @@ iframe { width: 100%; }
     padding: 5%;
 }
 
-input[type=text]{
+input[type=text], .message {
     width: 100%;
     padding: 12px;
     border: 1px solid orange;
@@ -224,7 +239,9 @@ input[type=text]{
     resize: vertical;
 }
 
-.message { height: 30vh; }
+.message { 
+    height: 30vh;
+}
 
 input[type=submit]{
     background: linear-gradient(to right, orange, yellow);
@@ -251,14 +268,23 @@ footer{
 
 .col {
     flex: 1;
-    padding: 5%;
+    padding: 3%;
 }
 
-.copy{
-    display: block;
-    text-align: center;
-    padding-top: 5vh;
+.col h3 {
+    margin-bottom: 5%;
 }
+
+.col > ul {
+    list-style-type: none;
+    padding-left: 0; 
+}
+
+.col > ul > li {
+    padding: 5px 0; 
+}
+
+.col > p > i { padding-right: 5%; }
 
 .social{
     text-align: center;
@@ -296,10 +322,8 @@ footer{
     color: white;   
 }
 
-.col > ul {
-    padding: 5vh 0;
-    list-style-type: none;
-    padding-left: 0; 
+.copy{
+    display: block;
+    text-align: center;
+    padding: 10vh 0;
 }
-
-.col > p > i { padding-right: 5%; }
